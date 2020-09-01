@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //Write javascript here
+
+      let handleButtonClick = function() {
+        let el = document.getElementById('firstHeading');
+        el.innerText = "I clicked a button!";
+        el.style.color = el.style.color === "red" ? "blue" : "red"; 
+      }
+
+      let handleTyping = function() {
+        let el = document.getElementById('tb-1');
+        let pEl = document.getElementById('pEl');
+        pEl.innerText = el.value
+      }
+
+     let handleDiv = function() {
+        let el = document.getElementById('redDiv');
+        el.style.backgroundColor = el.style.backgroundColor === "red" ? "blue" : "red";
+      }
+    </script>
+  </head>
+  <body>
+
+    <!--Assignment details are written in comments next to the elements you need to do stuff with-->
+
+    <h1 id="firstHeading">My First Heading</h1>
+
+    <p id="pEl">My first paragraph.</p>
+
+    <!-- After you're finished, you should be able to do these exercises.-->
+    <a href="https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_events1">Extra Exercises to test your knowledge</a>
+
+    <h1>Useful Links</h1>
+
+    <a href="https://www.w3schools.com/jsref/event_onclick.asp">onclick Event Handler</a>
+    <br>
+    <a href="https://www.w3schools.com/jsref/event_onkeyup.asp">keyup event handler</a>
+    <br>
+    <a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp">How to get elements by id</a>
+
+    <br><!-- You might have figured this out by now, but the <br> element puts a break between elements and makes the next element go on a different line-->
+    <!-- You can read about why some elements stay on the same line and some elements move to different lines automatically here https://www.w3schools.com/html/html_blocks.asp-->
+    <br>
+
+    <button onclick="handleButtonClick()">Example button (Click me)</button>
+
+    <br>
+    <button onclick="handleDiv()">Button you should do something with</button> <!--Make the background color of the red div switch back and forth between being red and another color of your choice when this button is clicked-->
+    <br>
+    <br>
+
+    <input id="tb-1" type="text" placeholder="Nothing happens with me yet" onkeyup="handleTyping()"><!--Add a keyup listener to this text box that replaces the text inside of the "My First Paragraph" <p> with the text inside of the textbox-->
+
+    <div id="redDiv" style="background-color:red;width:100px;height:100px" onclick="handleDiv()"></div><!--Div whose color should change when the "Button you should do something with" is clicked-->
+
+  </body>
+</html>
