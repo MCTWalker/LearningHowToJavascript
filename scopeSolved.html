@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      //Write javascript here
+
+      let randomNumber = Math.floor(Math.random() * 10);
+      var vehicle = "Car"
+
+      let handleButtonClick = function() {
+        var vehicle = "Truck"
+        var otherRandomNumber = Math.floor(Math.random() * 10);
+        //if randomNumber is odd, change the pEl's innerText to "Truck". If randomNumber is even, change the pEl's innerText to "Car"
+        //if otherRandomNumber is odd, change the pEl2's innerText to "Truck". If otherRandomNumber is even, change the pEl2's innerText to "Car"
+        //start writing your code here
+        if (randomNumber % 2 === 0) {
+          document.getElementById("pEl").innerText = "Car"
+        } else {
+          document.getElementById("pEl").innerText = vehicle
+        }
+
+        if (otherRandomNumber % 2 === 0) {
+          document.getElementById("pEl2").innerText = "Car"
+        } else {
+          document.getElementById("pEl2").innerText = vehicle
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <h1 id="firstHeading">Learning About Scope and If Statements</h1>
+
+    <p id="pEl">Change my innerText</p>
+
+    <br>
+
+    <p id="pEl2">Change my innerText</p>
+
+    <!-- After you're finished, you should be able to answer most of the questions in this quiz.-->
+    <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS">Javascript Quiz</a>
+
+    <h1>Useful Links</h1>
+
+    <a href="https://www.w3schools.com/js/js_if_else.asp">If Then Statements</a>
+    <br>
+    <a href="https://www.w3schools.com/js/js_scope.asp">Scope</a>
+    <br>
+    <a href="https://www.w3schools.com/jsref/met_document_getelementbyid.asp">How to get elements by id</a>
+
+    <br><br>
+    
+    <button onclick="handleButtonClick()">Do Something When I'm Clicked</button>
+
+  </body>
+</html>
