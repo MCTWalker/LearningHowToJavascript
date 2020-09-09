@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <p>Click the button to see if the alert says "Hello" or "I changed".</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+      let globalObj = {text: "Hello"};
+
+      function myFunction() {
+        let otherObj = globalObj;
+        
+        otherObj.text = "I changed";
+      }
+
+      myFunction();
+
+      alert(globalObj.text);
+    </script>
+
+  </body>
+</html>
