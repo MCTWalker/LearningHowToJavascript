@@ -12,9 +12,15 @@ All you need to start learning how to program javascript is a text editor and br
 
 ![Picture of github's download button](https://raw.githubusercontent.com/MCTWalker/PicturesForLessons/master/Screen%20Shot%202020-09-09%20at%2012.32.16%20PM.png)
 
-#### How to open an HTML file in the browser:
+#### You'll also need to know how to open local HTML files on your computer:
+
+How to open an HTML file in your Browser:
 
 [![Right click on the file to choose how to open it](https://img.youtube.com/vi/XO6l5PcPGY0/1.jpg)](https://youtu.be/XO6l5PcPGY0)
+
+How to open a HTML file in your code/text editor:
+
+[![Right click on the file to choose how to open it](https://img.youtube.com/vi/GdUA0MKUaqc/1.jpg)](https://youtu.be/GdUA0MKUaqc)
 
 ### Lesson Format
 
