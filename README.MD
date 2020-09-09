@@ -10,7 +10,7 @@ What it's not: A place to teach/learn about frameworks (eww).
 
 All you need to start learning how to program javascript is a text editor and browser. You can download these files using git if you're that advanced or you can just copy them to your computer, either by copy pasting the text or downloading the zip file using github's download button.
 
-
+![Picture of github's download button](https://raw.githubusercontent.com/MCTWalker/PicturesForLessons/master/Screen%20Shot%202020-09-09%20at%2012.32.16%20PM.png)
 
 #### How to open an HTML file in the browser:
 
