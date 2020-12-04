@@ -26,6 +26,11 @@ How to open a HTML file in your code/text editor:
 
 1. All lessons are supplied in the format of an html file. Javascript should be included in a script tag in the head and html should be included in the body.
 2. Lesson instructions can be in text/elements you can view in the browser or in comments in the html file or a combination of both.
+3. You can find the solved version of the lesson by looking for the file with "solved" next to the lesson name
 
-### ToDo: Add a list of the lessons in order
+### Recommended Lesson Order:
+
+1. Basic.html
+2. EventHandlers.html
+3. Scope.html
 
