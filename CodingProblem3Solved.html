@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h1 id="firstHeading">Coding Problem</h1>
+    <p>Right now, typing in the text box does nothing. Edit the code so that when a user types a number into the textbox, the number is passed into a function you create.</p>
+    <h2>The function should:</h2>
+    <ul>
+      <li>Take the number (n) and create an array of length (n) filled with random numbers.</li>
+      <li>Display the array, the largest number, and the small number in the array in the P element below </li>
+    </ul>
+
+    <br>
+    <input id="tb-1" type="text" placeholder="Type a number here" onkeyup="randFunc()">
+    <br>
+    <br>
+
+    <p id="p1">Show Output Here</p><!--P that displays text-->
+
+        <script>
+      //Write javascript here
+
+      let randFunc = function() {
+        let el = document.getElementById('tb-1');
+        let p = document.getElementById('p1');
+        let num = parseInt(el.value)
+
+        if (isNaN(num)) {
+          p.innerText = "Not a Number"
+        }  else {
+          let list = [];
+          let str = "Random Array: [";
+          let largestNum;
+          let smallestNum;
+          for (var i = 0; i < num; i++) {
+            list.push(Math.floor(Math.random() * -10000) + 5000);
+            if (!largestNum || largestNum < list[i]) {
+              largestNum = list[i];
+            }
+            if (!smallestNum || smallestNum > list[i]) {
+              smallestNum = list[i]
+            }
+            str += (i === num - 1) ? list[i] : list[i] + ", ";
+          }
+          str += "]" + "<br/><br/>" + "Largest Number: " + largestNum + "<br/><br/>Smallest Number: " + smallestNum;
+          p.innerHTML = str;
+        }
+
+      }
+
+    </script>
+
+  </body>
+</html>
